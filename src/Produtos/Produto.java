@@ -1,7 +1,7 @@
 package Produtos;
 
 public abstract class Produto {
-    String tipoProduto;
+    protected String tipoProduto;
     protected int preco;
 
     public abstract String descricaoProduto();
