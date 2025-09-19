@@ -6,6 +6,7 @@ public class RacaoGatoPremium extends Produto {
 
     public RacaoGatoPremium(){
         this.preco = 15;
+        this.tipoProduto = descricaoProduto();
     }
 
     @Override

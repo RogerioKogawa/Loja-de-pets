@@ -6,6 +6,7 @@ public class RacaoGatoIntermediaria extends Produto {
 
     public RacaoGatoIntermediaria(){
         this.preco = 10;
+        this.tipoProduto = descricaoProduto();
     }
     @Override
     public String descricaoProduto(){
