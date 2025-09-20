@@ -7,9 +7,15 @@ public class CarrinhoCompras {
         produtos.add(produto);
     }
 
-    public boolean removerItemPorNumero(int numero){
-        produtos.remove(numero - 1);
+    public boolean removerItemPorNumero(int numero) {
+        try {
+            produtos.remove(numero - 1);
+            return true; // deu certo
+        } catch (IndexOutOfBoundsException e) {
+            return false; // número inválido
+        }
     }
+
 
     public boolean removerItemPorNome(String nomeProduto){
         return produtos.removeIf(produto -> produto.getTipoProduto().equals(nomeProduto));
