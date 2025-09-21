@@ -21,14 +21,10 @@ public class Cliente {
     }
 
     public void removerItemCarrinhoPorNumero(int numero){
-        if(carrinhoCompras.removerItemPorNumero(numero)){
-            System.out.println("Item removido.");
-        }else{
-            System.out.println("Item não encontrado");
-        }
+        carrinhoCompras.removerItemPorNumero(numero);
     }
 
     public void finalizarCompra(){
-        System.out.printf("Total a pagar %d", carrinhoCompras.getValorFinal());
+        System.out.printf("Total a pagar %d\n", carrinhoCompras.getValorFinal());
     }
 }

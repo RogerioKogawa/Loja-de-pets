@@ -1,18 +1,21 @@
 import java.util.*;
 import Produtos.Produto;
 public class CarrinhoCompras {
-    List<Produto> produtos = new ArrayList<>();
+    private List<Produto> produtos = new ArrayList<>();
 
     public void adicionarItem(Produto produto){
         produtos.add(produto);
+        System.out.println("Produto adicionado ao carrinho");
     }
 
     public boolean removerItemPorNumero(int numero) {
         try {
             produtos.remove(numero - 1);
-            return true; // deu certo
+            System.out.println("Produto removido");
+            return true;
         } catch (IndexOutOfBoundsException e) {
-            return false; // número inválido
+            System.out.println("Produto não encontrado");
+            return false;
         }
     }
 
@@ -24,9 +27,10 @@ public class CarrinhoCompras {
     public String verItens(){
         StringBuilder listaItens = new StringBuilder();
         for(int i  = 0; i < produtos.size(); i++){
-            listaItens.append(i + " ")
-                      .append(produtos.get(i))
-                      .append("/n");
+            listaItens.append(i + 1)
+                      .append(" ")
+                      .append(produtos.get(i).descricaoProduto())
+                      .append("\n");
         }
         return listaItens.toString();
     }

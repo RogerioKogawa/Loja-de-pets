@@ -5,7 +5,7 @@ import Produtos.Produto;
 import java.util.Scanner;
 
 public class Menu {
-    Scanner input = new Scanner(System.in);
+    private static Scanner input = new Scanner(System.in);
     public static void visualizarMenu(){
         System.out.println("Escolha uma das opções: ");
         System.out.println("1 - Ração para cachorro premium");
@@ -19,9 +19,8 @@ public class Menu {
         System.out.println("9 - Remover item por nome");
         System.out.println("10 - Remover item por numero");
     }
-    public void OpcaoEscolhida(int opcao){
+    public static void OpcaoEscolhida(int opcao, Cliente cliente){
         Produto produto = null;
-        Cliente cliente = new Cliente();
         switch(opcao){
             case 1 -> produto = new RacaoCachorroPremium();
             case 2 -> produto = new RacaoCachorroIntermediaria();
