@@ -1,6 +1,6 @@
-package Produtos.Gato;
+package main.java.Produtos.Gato;
 
-import Produtos.Produto;
+import main.java.Produtos.Produto;
 
 public class RacaoGatoPremium extends Produto {
 

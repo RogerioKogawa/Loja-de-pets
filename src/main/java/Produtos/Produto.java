@@ -1,4 +1,4 @@
-package Produtos;
+package main.java.Produtos;
 
 public abstract class Produto {
     protected String tipoProduto;

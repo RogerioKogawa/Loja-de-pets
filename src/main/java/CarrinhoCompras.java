@@ -1,5 +1,9 @@
+package main.java;
+
+import main.java.Produtos.Produto;
+
 import java.util.*;
-import Produtos.Produto;
+
 public class CarrinhoCompras {
     private List<Produto> produtos = new ArrayList<>();
 

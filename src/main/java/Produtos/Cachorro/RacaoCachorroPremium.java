@@ -1,5 +1,5 @@
-package Produtos.Cachorro;
-import Produtos.Produto;
+package main.java.Produtos.Cachorro;
+import main.java.Produtos.Produto;
 
 public class RacaoCachorroPremium extends Produto {
 

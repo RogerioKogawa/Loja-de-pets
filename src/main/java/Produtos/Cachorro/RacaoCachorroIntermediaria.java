@@ -1,7 +1,7 @@
-package Produtos.Cachorro;
-import Produtos.*;
+package main.java.Produtos.Cachorro;
+import main.java.Produtos.Produto;
 
-public class RacaoCachorroIntermediaria extends Produto{
+public class RacaoCachorroIntermediaria extends Produto {
 
     public RacaoCachorroIntermediaria(){
         this.preco = 10;

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Cobase.iml" filepath="$PROJECT_DIR$/Cobase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/maratona-java.iml" filepath="$PROJECT_DIR$/src/maratona-java.iml" />
     </modules>
   </component>
 </project>

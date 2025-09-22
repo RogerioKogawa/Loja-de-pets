@@ -1,6 +1,12 @@
-import Produtos.Cachorro.*;
-import Produtos.Gato.*;
-import Produtos.Produto;
+package main.java;
+
+import main.java.Produtos.Cachorro.RacaoCachorroBasica;
+import main.java.Produtos.Cachorro.RacaoCachorroIntermediaria;
+import main.java.Produtos.Cachorro.RacaoCachorroPremium;
+import main.java.Produtos.Gato.RacaoGatoBasica;
+import main.java.Produtos.Gato.RacaoGatoIntermediaria;
+import main.java.Produtos.Gato.RacaoGatoPremium;
+import main.java.Produtos.Produto;
 
 import java.util.Scanner;
 

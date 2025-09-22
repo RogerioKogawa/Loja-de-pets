@@ -1,4 +1,6 @@
-import Produtos.Produto;
+package main.java;
+
+import main.java.Produtos.Produto;
 
 public class Cliente {
     private String nome;
