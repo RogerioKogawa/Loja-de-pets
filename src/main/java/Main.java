@@ -1,16 +1,16 @@
 package main.java;
 
-import main.java.DAO.ProdutoVendidoDAO;
-import main.java.Produtos.Cachorro.RacaoCachorroBasica;
-import main.java.Produtos.Produto;
-import main.java.util.ConnectionFactory;
-
-import java.sql.Connection;
-import java.sql.SQLException;
+import java.util.Scanner;
 
 public class Main{
-    public static void main(String[] args) throws SQLException{
-       Produto produto = new RacaoCachorroBasica();
-        ProdutoVendidoDAO.salvar(produto);
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        Cliente cliente = new Cliente();
+        int opcao = 1;
+        while(opcao != 0) {
+            Menu.visualizarMenu();
+            opcao = Integer.parseInt(input.nextLine());
+            Menu.OpcaoEscolhida(opcao, cliente);
+        }
     }
 }

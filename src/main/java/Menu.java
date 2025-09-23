@@ -35,7 +35,6 @@ public class Menu {
             case 5 -> produto = new RacaoGatoIntermediaria();
             case 6 -> produto = new RacaoGatoBasica();
             case 7 -> cliente.verItensCarrinho();
-            //case 8 -> banco de dados e calcular valor final;
             case 8 -> cliente.finalizarCompra();
             case 9 -> {
                 System.out.println("Digite o nome do item");

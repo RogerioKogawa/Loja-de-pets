@@ -12,6 +12,7 @@ public class ProdutoVendidoDAO {
         try(Connection conn = ConnectionFactory.getConnection();
             Statement stmt = conn.createStatement()){
             int rowsAffected = stmt.executeUpdate(sql);
+            System.out.printf("Linhas afetadas: %d\n", rowsAffected);
         }catch(SQLException e){
             System.out.println(e.getMessage());
         }

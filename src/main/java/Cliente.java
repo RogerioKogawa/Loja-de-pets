@@ -28,5 +28,7 @@ public class Cliente {
 
     public void finalizarCompra(){
         System.out.printf("Total a pagar %d\n", carrinhoCompras.getValorFinal());
+        System.out.println("Salvando produtos no banco de dados");
+        carrinhoCompras.salvarBancoDados();
     }
 }

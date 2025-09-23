@@ -1,5 +1,6 @@
 package main.java;
 
+import main.java.DAO.ProdutoVendidoDAO;
 import main.java.Produtos.Produto;
 
 import java.util.*;
@@ -49,6 +50,12 @@ public class CarrinhoCompras {
 
     public int getValorFinal(){
         return CalcularPrecoTotal();
+    }
+
+    public void salvarBancoDados(){
+        for(var produto: produtos){
+            ProdutoVendidoDAO.salvar(produto);
+        }
     }
 
 }
